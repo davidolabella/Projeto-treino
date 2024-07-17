@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+}
+
+/*banner*/
+    section.banner{
+        width: 100%;
+        background-image: url(../img/home.webp);
+        background-position: center;
+        background-color: black;
+        padding: 5%;
+    }
+    .banner .container{
+        max-width: 500px;
+    }
+    .banner .nome{
+        font-family: "Abhaya Libre";
+        font-size: 21px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 20%;
+    }
+
+    .banner .chamada{
+        font-family: "Abhaya Libre";
+        font-weight: bold;
+        font-size: 25px;
+        color: white;
+        margin-bottom: 5%;
+    }
+
+    .banner p{
+        font-family: "Abhaya Libre";
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        padding-bottom: 20%;
+    }
+
+    .banner .buttom{
+        width: 226px;
+        height: 58px;
+        background-color: #B4816B;
+        font-family: "Libre Franklin";
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 300;
+        margin-bottom: 120px;
+    }
+/************/
+
+/*sobre*/
+    section.sobre{
+        width: 100%;
+        padding: 5%;
+        background-color: black;
+    }
+
+    .sobre h2{
+        font-family: "Abhaya Libre";
+        font-size: 44px;
+        font-weight: bold;
+        color: white;
+    }
+    .sobre .container{
+        margin-top:350px ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .sobre .single{
+        width: calc(100%/3);
+        font-family: "Libre Franklin";
+        font-size: 20px;
+        font-weight: 300;
+        color: white;
+        padding: 0 50px;
+    }
+    .sobre .single:nth-of-type(1){
+        padding: 0;
+        padding-right: 100px;
+    }
+    .sobre .single:nth-of-type(3){
+        padding: 0;
+        padding-left: 100px;
+    }
+    .sobre .single .number{
+        width: 38px;
+        height: 38px;
+        background-color: #B4816B;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Abhaya Libre";
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+/*******************/
+
+/*areas*/
+    section.areas{
+        padding: 5% ;
+    }
+    section.areas .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .areas .texto{
+        width: 50%;
+    }
+
+    .texto h2{
+        font-family: "Abhaya Libre";
+        font-size: 46px;
+        font-weight: 500;
+    }
+    .texto p{
+        max-width: 500px;
+        margin-top: 200px;
+        font-family: "Libre Franklin";
+        font-size: 22px;
+       font-weight: 200;
+    }
+
+    .texto ul{
+        margin-top: 80px;
+        padding: 0 25px;
+        list-style-position: inside;
+    }
+
+    .texto ul li{
+        font-family: "Abhaya Libre";
+        font-size: 26px;
+        margin-bottom: 5px;
+        font-weight: 200;
+    }
+    .areas .img{
+        width: 45%;
+        padding-top: 40%;
+        background-color: gray;
+        background-image: url(../img/livros.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+/**************/
+
+/*cliente*/
+    section.cliente{
+        background-color: #B4816B;
+        padding: 5%;
+    }
+    .cliente .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .cliente .titulo{
+        width: 50%;
+    }
+    .cliente h2{
+        font-family: "Abhaya Libre";
+        font-size: 44px;
+        color: white;
+        font-weight: 300;
+    }
+    .cliente h3{
+        font-family: "Abhaya Libre";
+        font-size: 28px;
+        font-weight: 300;
+        color: #724E3F;
+    }
+    .cliente .testemunha{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .cliente .single{
+       padding: 20px 0;
+    }
+    .cliente .single:nth-of-type(1){
+        padding: 0;
+        padding-bottom: 50px;
+    }
+
+    .cliente .single:nth-of-type(3){
+        padding: 0;
+        padding-top: 50px;
+    }
+    .cliente .single .wraper{
+        display: flex;
+    }
+    .cliente .single .img{
+        width: 30px;
+        height: 30px;
+        background-image: url(../img/aspas-duplas.png);
+        background-size: cover;
+        background-position: center;
+        margin-right: 10px;
+    }
+
+    .cliente .single p{
+        font-family: "Libre Franklin";
+        font-size: 18px;
+        color: white;
+        font-weight: 200;
+        max-width: 380px;
+        
+    }
+    .cliente .single span{
+        display: block;
+        margin-top: 30px;
+        margin-left: 40px;
+        font-family: "Abhaya Libre";
+        font-size: 18px;
+        color: white;
+        font-weight: 300;
+    }
+    /**********/
+
+    /*chamada*/
+        section.chamada{
+            background-color: black;
+            padding: 5%;
+        }
+        section.chamada .container{
+            display: flex;
+        }
+        section.chamada .img{
+            width: 60%;
+            padding-top: 50%;
+            background-image: url(../img/advogado-trabalhista-equipe.jpg);
+            background-size: cover;
+        }
+        .chamada-flex{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            max-width: 250px;
+            margin: 0 auto;
+        }
+        .chamada-flex > h2{
+            font-family: "Abhaya Libre";
+            font-size: 44px;
+            font-weight: 300;
+            color: white;
+            max-width: 1000px;
+            width: 100%;
+            text-align: center;
+        }
+        .chamada-flex .single{
+            margin: 30px 0;
+        }
+        .chamada-flex .single h2{
+            font-family: "Abhaya Libre";
+            font-size: 28px;
+            font-weight: 300;
+            color: #B4816B;
+        }
+        .chamada-flex .single p{
+            font-family: "Libre Franklin";
+            font-size: 16px;
+            font-weight: 300;
+            color: white;
+        }
+
+        .chamada-flex .social{
+            display: flex;
+        }
+        .social .img-logo{
+            width: 40px;
+            height: 40px;
+            margin-right: 30px;
+            margin-top: 10px;
+            border: 2px solid white;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .chamada-flex > p{
+            margin-top: 40px;
+            font-family: "Libre Franklin";
+            font-size: 16px;
+            font-weight: 200;
+            color: white;
+        }
+
+        .f{
+            background-image: url(../img/faceboo.png);
+            background-size: 90% 90%;
+        }
+
+        .t{
+            background-image: url(../img/twitter.png);
+            background-size: 75% 75%;
+        }
+
+        .i{
+            background-image: url(../img/instagram.png);
+            background-size: 70% 70%;
+        }
+/******************/
+
+/******media:1024px*****/
+    @media screen and (max-width: 1024px) {
+        /**banner*/
+            .banner{
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .banner .nome{
+                margin-top: 100px;
+            }
+        /*******************/
+
+        /**sobre*/
+            .sobre h2{
+                text-align: center;
+            }
+            .sobre .container{
+                margin-top: 250px;
+                flex-direction: column;
+                padding: 10px;
+            }
+            .sobre .single{
+                width: calc(100%);
+                padding: 0 ;
+                margin-top: 100px;
+            }
+            .sobre .single:nth-of-type(1){
+                padding: 0;
+            }
+            .sobre .single:nth-of-type(3){
+                padding: 0;
+                padding-bottom: 30px;
+            }
+        /**************/
+
+        /*areas*/
+            section.areas .container{
+                flex-direction: column;
+                align-items: center;
+                
+            }
+            .areas .texto{
+                width: 100%;
+                
+            }
+
+            .texto h2{
+                font-size: 40px;
+                max-width:500px;
+                margin: 0 auto;
+            }
+            .texto p{
+                max-width: 500px;
+                font-size: 22px;
+                margin: 0 auto;
+                margin-top: 200px;
+            }
+
+            .texto ul{
+                max-width: 550px;
+                margin: 0 auto;
+                margin-top: 80px;
+            }
+            .areas .img{
+                width: 50%;
+                padding-top: 45%;
+                margin-top: 100px;
+                margin-left: -60px;
+            }
+        /**************/
+
+        /***cliente**/
+        
+            .cliente .container{
+                flex-direction: column;
+                align-items: center;
+            }
+            .cliente .titulo{
+                width: 100%;
+                text-align: center;
+            }
+            .cliente .testemunha{
+                width: 100%;
+                margin-top: 100px;
+                align-items: center;
+            }
+        /***************/
+
+        /*chamada*/
+        
+            section.chamada .container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            section.chamada .img{
+                margin-bottom: 50px;
+            }
+        /*****************/
+    }
+/********************/
+
+/***media:768px*****/
+    @media screen and (max-width: 768px) {
+        /*banner*/
+        .banner .chamada{
+            font-size: 20px;
+        }
+
+        .banner p{
+            font-size: 40px;
+        }
+        /*areas*/
+            .areas .img{
+                width: 100%;
+                padding-top: 100%;
+                margin-left: 0;
+            }
+        /*********/
+        
+        /*cliente*/
+            .cliente .single .img{
+                display: none;
+            }
+            .cliente .single span{
+                margin:30px 0;
+            }
+        /**********/
+
+        /*chamada*/
+            section.chamada .img{
+                width: 100%;
+                padding-top: 100%;
+            }
+
+            .chamada-flex{
+                width: 100%;  
+            }
+        /****/
+    }
+/*****************/
