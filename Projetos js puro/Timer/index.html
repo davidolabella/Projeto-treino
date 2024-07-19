@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Timer</title>
+</head>
+<body>
+    <audio src="media/alarm.mp3" id="alarm"></audio>
+    <section class="crono">
+        <div class="container">
+
+            <div class="tempo">
+                <h2>Insira o tempo</h2>
+                <div class="tempo-container">
+
+                    <div class="single">
+                        <select name="hora" id="hora"></select>
+                        <span>HH</span>
+                    </div><!--single-->
+                    <div class="single">
+                        <select name="minuto" id="minuto"></select>
+                        <span>MM</span>
+                    </div><!--single-->
+                    <div class="single">
+                        <select name="segundo" id="segundo"></select>
+                        <span>SS</span>
+                    </div><!--single-->
+
+                </div><!--tempo-container-->
+            </div><!--tempo-->
+
+            <div class="temp">
+                <h2 id="comecar">Começar</h2>
+                <div class="relogio">
+                    <h2  id="display">00:00:00</h2>
+                </div><!---->
+            </div><!--temp-->
+        </div><!--container-->
+    </section><!--crono-->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
