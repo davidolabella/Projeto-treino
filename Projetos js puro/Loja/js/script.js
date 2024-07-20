@@ -37,7 +37,8 @@ window.onload = function(){
     
     // Criar novo item com o form
         var form = document.getElementById('form');
-        form.addEventListener('submit',function() {
+        form.addEventListener('submit',function(event) {
+            event.preventDefault();//não recarregar a pagina quando enviar 
             let nome = document.getElementById('nome').value;
             let preco = document.getElementById('preco').value;
             let img = document.getElementById('img').value;
