@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Loja virtual</title>
+    
+
+</head>
+<body>
+<!-------------------------------->
+    <header>
+        <div id="addproduto-img">
+            <img src="img/adicionar.png">
+        </div><!--ab-->
+        <h2>Mini loja javascript DMD</h2>
+        <div id="carrinho-img">
+            <img src="img/carrinho.png">
+        </div><!--cb-->
+    </header>
+<!-------------------------------->
+    <section class="produtos">
+        <h2>Produtos</h2>
+        <div id="containerp">
+
+        </div><!--containerp-->
+    </section><!--produtos-->
+<!-------------------------------->
+    <section class="carrinho" id="carrinho">
+        <h2>Carrinho:</h2>
+        <div id="containerc">
+            <p>Carrinho Vazio...</p>
+        </div><!--containerc-->
+        <div class="buttom">
+            <div id="finalizar">Finalizar Compra</div>
+            <div id="limpar">Limpar Carrinho</div>
+        </div><!--buttom-->
+    </section><!--carrinho-->
+<!-------------------------------->
+    <section class="addproduto" >
+        <form id="form">
+            <h2>Adicione um novo produto:</h2>
+            <span>Nome:</span>
+            <input class="w50" type="text" id="nome" placeholder="Nome*" required>
+
+            <span>Preço:</span>
+            <input class="w50" type="text" id="preco" placeholder="Preço*" required>
+
+            <span>Imagem:</span>
+            <input class="w100" type="text" id="img" placeholder="Imagem(url)*">
+            <span class="no">*Não obrigatório</span>
+
+            <input type="submit" value="Adicionar">
+        </form>
+    </section><!--addproduto-->
+<!-------------------------------->
+<script src="js/script.js"></script>
+</body>
+</html>
