@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+/*padrao*/
+
+/*************************/
+/*corpo calc*/
+section.calc{
+    width: 262px;
+    height: 420px;
+    background-color: rgb(168, 168, 168);
+    border-radius: 10px;
+    margin: 40px auto;
+    padding: 10px;
+    border: 2px solid gray;
+    
+}
+/*display*/
+.display{
+    width: 100%;
+    height: 70px;
+    background: rgb(0, 0, 0);
+    border: 2px solid gray;
+    margin: 10px auto;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+/*numero*/
+#number{
+    color: white;
+    text-align: right;
+    font-size: 45px;
+}
+/*grid de botoes*/
+.keys{
+    width: 240px;
+    height: 300px;
+    
+    /*grid*/
+    padding-top:20px ;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    
+}
+/*posicao igual*/
+#igual{
+    grid-column-start:4 ;
+    grid-row-start:3 ;
+    grid-row-end: 6;
+    color: white;
+    background-color: rgb(16, 16, 129);
+}
+/*posicao plus*/
+#plus{
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+/*posicao inverter*/
+#inverter{
+    grid-column-start: 1;
+    grid-row-start: 5;
+}
+
+/*buttom*/
+button{
+    border: 2px solid gray;
+    font-size: 23px;
+    border-radius: 10px;
+    color: #787777;
+}
+/*hover*/
+button:hover{
+    background-color: #ffffff;
+}
+/*hover igual*/
+#igual:hover{
+    background-color: rgb(62, 62, 180);
+}
