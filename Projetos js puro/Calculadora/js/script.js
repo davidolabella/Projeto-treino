@@ -49,11 +49,16 @@ window.onload = () => {
 
     // Remove o último dígito do número exibido
     Del.onclick = () => {
-        if (display.innerHTML > 0) {
-            display.innerHTML = (display.innerHTML - display.innerHTML[display.innerHTML.length - 1]) / 10;
-        } else {
-            display.innerHTML = -((display.innerHTML * -1) - display.innerHTML[display.innerHTML.length - 1]) / 10;
-        }
+    if(display.innerHTML[display.innerHTML.length -2] == '.'){
+        display.innerHTML = display.innerHTML.slice(0,display.innerHTML.length -2);
+    }else{
+        display.innerHTML = display.innerHTML.slice(0,display.innerHTML.length -1);
+    }
+    if(display.innerHTML == '' || display.innerHTML == '-'){
+        display.innerHTML = '0';
+    }
+     
+        
     }
 
     igual.onclick = () => {
@@ -84,7 +89,7 @@ window.onload = () => {
         } else {
              // Exibe o resultado, truncado em até 10 caracteres
              display.innerHTML = r;
-             display.innerHTML = display.innerHTML.substring(0, 10);
+             display.innerHTML = display.innerHTML.substring(0, 9);
              n1 = undefined;
              n2 = undefined;
         }
@@ -100,10 +105,10 @@ window.onload = () => {
                     r = undefined;
                     display.innerHTML = '';
                     display.innerHTML += number[i].innerHTML;
-                    display.innerHTML = display.innerHTML.substring(0, 10);
+                    display.innerHTML = display.innerHTML.substring(0, 9);
                 } else {
                     display.innerHTML += number[i].innerHTML;
-                    display.innerHTML = display.innerHTML.substring(0, 10);
+                    display.innerHTML = display.innerHTML.substring(0, 9);
                 }
             }
         });
