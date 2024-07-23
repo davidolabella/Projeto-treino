@@ -83,7 +83,7 @@ window.onload = () => {
             display.innerHTML = "0";
         } else {
              // Exibe o resultado, truncado em até 10 caracteres
-             display.innerHTML = r.toFixed(8);
+             display.innerHTML = r;
              display.innerHTML = display.innerHTML.substring(0, 10);
              n1 = undefined;
              n2 = undefined;
