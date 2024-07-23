@@ -79,12 +79,19 @@ window.onload = () => {
         // Verifica se o resultado está fora do limite permitido
         if (r > 999999999 || r < -999999999) {
             display.innerHTML = 'Error';
+        } else if (n1 === undefined || n2 === undefined) { // Verifica se algum dos números não foi definido, caso não tenha sido, simplesmente retorna 0 prevenindo um NaN
+            display.innerHTML = "0";
         } else {
             // Exibe o resultado, truncado em até 10 caracteres
             display.innerHTML = r;
             display.innerHTML = display.innerHTML.substring(0, 10);
             n1 = undefined;
             n2 = undefined;
+             // Exibe o resultado, truncado em até 10 caracteres
+             display.innerHTML = r.toFixed(8);
+             display.innerHTML = display.innerHTML.substring(0, 10);
+             n1 = undefined;
+             n2 = undefined;
         }
     }
 
