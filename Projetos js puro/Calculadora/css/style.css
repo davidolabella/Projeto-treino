@@ -35,7 +35,8 @@ section.calc{
 #number{
     color: white;
     text-align: right;
-    font-size: 45px;
+    overflow: hidden;
+    font-size: 41px;
 }
 /*grid de botoes*/
 .keys{
