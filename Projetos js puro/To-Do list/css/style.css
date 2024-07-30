@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    font-family: sans-serif;
+}
+
+section.todolist{
+    margin: 0 auto;
+    padding: 2%;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.todolist .add{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    border: 3px solid gray;
+    border-radius: 30px;
+}
+
+.add input[type=text]{
+    width: 70%;
+    border-radius: 30px;
+    padding: 5px 20px;
+    font-size: 18px;
+}
+
+.add input[type=submit]{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.list{
+    margin: 30px 0;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+.list::-webkit-scrollbar{
+    width: 3px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.list::-webkit-scrollbar-thumb{
+    background-color: gray;
+}
+
+.list .single{
+    width: 95%;
+    height: 50px;
+    border-radius: 10px;
+    border: 3px solid gray;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.single input[type=checkbox]{
+    width: 25px;
+    height: 25px;
+    border-radius:30px;
+    cursor: pointer;
+}
+.single input[type=text]{
+    position: relative;
+    border: 0;
+    font-size: 23px;
+    color: rgb(66, 66, 66);
+    left: 10px;
+    width: 250px;
+    height: 30px;
+    display: none;
+    outline: 0;
+
+}
+.single p{
+    width: 200px;
+    font-size: 23px;
+    color: rgb(66, 66, 66);
+    white-space: nowrap;
+    text-align: center;
+    overflow-x: auto;
+    
+}
+.single p::-webkit-scrollbar{
+    background-color: rgba(240, 248, 255, 0);
+    height: 5px;
+}
+.single p::-webkit-scrollbar-thumb{
+    background-color: rgb(66, 66, 66);
+}
+.buttons{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.buttons div{
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    background-size: cover;
+    cursor: pointer;
+}
